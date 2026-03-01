@@ -1,1 +1,7 @@
-
+services:
+  - type: web
+    name: void-training-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node src/index.js
+    healthCheckPath: /health
