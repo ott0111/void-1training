@@ -5,7 +5,7 @@ const client=new Client({
 })
 
 client.once("ready",()=>{
- console.log("Discord bot ready")
+ console.log(`Discord bot ready as ${client.user.tag}`)
 })
 
 client.login(process.env.DISCORD_BOT_TOKEN)
